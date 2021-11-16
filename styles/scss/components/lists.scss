@@ -1,0 +1,25 @@
+.stats {
+  &__list {
+    padding: var(--padding-inner);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    transform: all 0.2s;
+
+    &:hover {
+      color: var(--white);
+    }
+
+    &:active {
+      color: var(--white);
+    }
+  }
+}

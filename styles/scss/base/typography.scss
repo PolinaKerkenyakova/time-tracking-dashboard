@@ -1,0 +1,11 @@
+h1 {
+    font-weight: var(--fw-300);
+    font-size: var(--fs-big);
+}
+
+h1 > span {
+    display: block;
+    font-size: var(--fs-small);
+    font-weight: var(--fw-400);
+    color: var(--pale-blue);
+}
