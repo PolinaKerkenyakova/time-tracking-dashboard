@@ -1,5 +1,12 @@
 .dashboard {
-    background-color: violet;
-    width: 90rem;
+    width: 40rem;
     max-width: 90%;
+    display: grid;
+    gap: 2.5rem;
+    margin: 8rem 0;
+}
+
+.stats {
+    display: grid;
+    row-gap: 2.5rem;
 }

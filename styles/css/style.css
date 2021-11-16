@@ -19,8 +19,8 @@
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
-  --border-radius-default: 1rem;
-  --padding-inner: 2.7rem;
+  --border-radius-default: 1.5rem;
+  --padding-inner: 2.5rem;
 }
 
 * {
@@ -97,6 +97,10 @@ h1 > span {
   color: var(--white);
 }
 
+.active-link {
+  color: var(--white);
+}
+
 .report-card {
   position: relative;
   z-index: 0;
@@ -122,7 +126,7 @@ h1 > span {
   background-color: var(--soft-orange);
 }
 .report-card__icon {
-  height: 8rem;
+  height: 6.5rem;
   position: absolute;
   top: -0.7rem;
   right: 1.2rem;
@@ -132,7 +136,7 @@ h1 > span {
   border-radius: var(--border-radius-default);
   background-color: var(--dark-blue);
   transition: all 0.2s;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   position: relative;
   z-index: 2;
   padding: var(--padding-inner);
@@ -164,9 +168,11 @@ h1 > span {
 }
 .report-card__hours-now {
   font-size: var(--fs-big);
+  font-weight: var(--fw-300);
 }
 .report-card__hours-before {
   color: var(--pale-blue);
+  font-size: var(--fs-small);
 }
 
 .user-profile {
@@ -190,9 +196,16 @@ h1 > span {
 }
 
 .dashboard {
-  background-color: violet;
-  width: 90rem;
+  width: 40rem;
   max-width: 90%;
+  display: grid;
+  gap: 2.5rem;
+  margin: 8rem 0;
+}
+
+.stats {
+  display: grid;
+  row-gap: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

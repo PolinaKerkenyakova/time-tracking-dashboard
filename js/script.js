@@ -29,7 +29,8 @@ const getCardColor = (title) => {
 const cards = (data) => html`
 ${data.map(x => html`
 <div class="report-card ${getCardColor(x.title)}">
-    <img src="./images/icon-${x.title.toLowerCase().split(' ').join('-')}.svg" alt="${x.title} representing icon" class="report-card__icon">
+    <img src="./images/icon-${x.title.toLowerCase().split(' ').join('-')}.svg" alt="${x.title} representing icon"
+        class="report-card__icon">
     <div class="report-card__stat">
         <div class="report-card__info">
             <h2 class="report-card__title">${x.title}</h2>
@@ -51,17 +52,23 @@ const renderData = () => render(cards(data), document.getElementById('stats'));
 
 renderData();
 
-document.getElementById('daily').addEventListener('click', async () => {
+document.getElementById('daily').addEventListener('click', async (e) => {
     data = await fetchData();
     renderData();
+    document.querySelectorAll('.stats__link').forEach(i => i.classList.remove('active-link'));
+    e.target.classList.add('active-link');
 });
 
-document.getElementById('weekly').addEventListener('click', async () => {
+document.getElementById('weekly').addEventListener('click', async (e) => {
     data = await fetchData('weekly');
     renderData();
+    document.querySelectorAll('.stats__link').forEach(i => i.classList.remove('active-link'));
+    e.target.classList.add('active-link');
 });
 
-document.getElementById('monthly').addEventListener('click', async () => {
+document.getElementById('monthly').addEventListener('click', async (e) => {
     data = await fetchData('monthly');
     renderData();
+    document.querySelectorAll('.stats__link').forEach(i => i.classList.remove('active-link'));
+    e.target.classList.add('active-link');
 });
