@@ -16,6 +16,7 @@
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
+  --border-radius-default: 1rem;
 }
 
 * {
@@ -39,6 +40,25 @@ body {
   font-weight: var(--fw-400);
   color: #eee;
   background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.dashboard {
+  background-color: violet;
+  width: 90rem;
+  max-width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

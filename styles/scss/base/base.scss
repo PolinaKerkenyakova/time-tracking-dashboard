@@ -28,7 +28,11 @@
     // font weight
     --fw-300: 300;
     --fw-400: 400;
-    --fw-500: 500; 
+    --fw-500: 500;
+
+    // Utils
+
+    --border-radius-default: 1rem;
 }
 
 * {
@@ -52,4 +56,8 @@ body {
     font-weight: var(--fw-400);
     color: #eee;
     background-color: var(--very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
