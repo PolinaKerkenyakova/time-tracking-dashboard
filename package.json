@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PolinaKerkenyakova/time-tracking-dashboard/issues"
   },
-  "homepage": "https://github.com/PolinaKerkenyakova/time-tracking-dashboard#readme"
+  "homepage": "https://github.com/PolinaKerkenyakova/time-tracking-dashboard#readme",
+  "dependencies": {
+    "lit-html": "^2.0.2"
+  }
 }

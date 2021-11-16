@@ -1,7 +1,7 @@
 :root {
   --white: hsl(0, 0%, 93%);
   --blue: hsl(246, 80%, 60%);
-  --light-red: hsl(15, 100%, 70%);
+  --light-orange: hsl(15, 100%, 70%);
   --soft-blue: hsl(195, 74%, 62%);
   --light-red: hsl(348, 100%, 68%);
   --line-green: hsl(145, 58%, 55%);
@@ -14,11 +14,12 @@
   --ff-default: "Rubik", sans-serif;
   --fs-small: 1.3rem;
   --fs-normal: 1.8rem;
-  --fs-big: 2.6rem;
+  --fs-med: 2.6rem;
+  --fs-big: 3rem;
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
-  --border-radius-default: 1.5rem;
+  --border-radius-default: 1rem;
   --padding-inner: 2.7rem;
 }
 
@@ -53,7 +54,7 @@ body {
 
 h1 {
   font-weight: var(--fw-300);
-  font-size: var(--fs-big);
+  font-size: var(--fs-med);
 }
 
 h1 > span {
@@ -94,6 +95,63 @@ h1 > span {
 }
 .stats__link:active {
   color: var(--white);
+}
+
+.report-card {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-default);
+}
+.report-card--light-orange {
+  background-color: var(--light-orange);
+}
+.report-card__icon {
+  height: 8rem;
+  position: absolute;
+  top: -0.7rem;
+  right: 1.2rem;
+  z-index: 1;
+}
+.report-card__stat {
+  border-radius: var(--border-radius-default);
+  background-color: var(--dark-blue);
+  transition: all 0.2s;
+  margin-top: 4.5rem;
+  position: relative;
+  z-index: 2;
+  padding: var(--padding-inner);
+}
+.report-card__stat:hover {
+  background-color: var(--desaturated-blue);
+}
+.report-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.report-card__title {
+  font-size: var(--fs-normal);
+  font-weight: var(--fs-400);
+}
+.report-card__elipsis-icon {
+  cursor: pointer;
+  fill: var(--pale-blue);
+  transition: all 0.2s;
+}
+.report-card__elipsis-icon:hover {
+  fill: var(--white);
+}
+.report-card__hours {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.report-card__hours-now {
+  font-size: var(--fs-big);
+}
+.report-card__hours-before {
+  color: var(--pale-blue);
 }
 
 .user-profile {

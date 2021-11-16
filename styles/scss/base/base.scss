@@ -1,70 +1,70 @@
 :root {
+  // Colors
 
-    // Colors
+  // primary
+  --white: hsl(0, 0%, 93%);
+  --blue: hsl(246, 80%, 60%);
+  --light-orange: hsl(15, 100%, 70%); // work
+  --soft-blue: hsl(195, 74%, 62%); // play
+  --light-red: hsl(348, 100%, 68%); // study
+  --line-green: hsl(145, 58%, 55%); // exercise
+  --violet: hsl(264, 64%, 52%); //social
+  --soft-orange: hsl(43, 84%, 65%); // self care
 
-    // primary
-    --white: hsl(0, 0%, 93%);
-    --blue: hsl(246, 80%, 60%);
-    --light-red: hsl(15, 100%, 70%); // work
-    --soft-blue: hsl(195, 74%, 62%); // play
-    --light-red: hsl(348, 100%, 68%); // study
-    --line-green: hsl(145, 58%, 55%); // exercise
-    --violet: hsl(264, 64%, 52%); //social
-    --soft-orange: hsl(43, 84%, 65%); // self care
+  // neutral
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
 
-    // neutral
-    --very-dark-blue: hsl(226, 43%, 10%);
-    --dark-blue: hsl(235, 46%, 20%);
-    --desaturated-blue: hsl(235, 45%, 61%);
-    --pale-blue: hsl(236, 100%, 87%);
+  // Fonts
 
-    // Fonts
+  // font family
+  --ff-default: "Rubik", sans-serif;
 
-    // font family
-    --ff-default: 'Rubik', sans-serif;
+  // font size
+  --fs-small: 1.3rem;
+  --fs-normal: 1.8rem;
+  --fs-med: 2.6rem;
+  --fs-big: 3rem;
 
-    // font size
-    --fs-small: 1.3rem;
-    --fs-normal: 1.8rem;
-    --fs-big: 2.6rem;
+  // font weight
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
 
-    // font weight
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
+  // Utils
 
-    // Utils
+  --border-radius-default: 1rem;
 
-    --border-radius-default: 1.5rem;
-
-    --padding-inner: 2.7rem;
+  --padding-inner: 2.7rem;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 10px
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px
 }
 
 body {
-    font-size: var(--fs-normal);
-    font-family: var(--ff-default);
-    font-weight: var(--fw-400);
-    line-height: 1.5;
-    color: #eee;
-    background-color: var(--very-dark-blue);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: var(--fs-normal);
+  font-family: var(--ff-default);
+  font-weight: var(--fw-400);
+  line-height: 1.5;
+  color: #eee;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
