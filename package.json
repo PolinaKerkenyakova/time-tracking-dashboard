@@ -1,0 +1,19 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/scss/main.scss:styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolinaKerkenyakova/time-tracking-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PolinaKerkenyakova/time-tracking-dashboard/issues"
+  },
+  "homepage": "https://github.com/PolinaKerkenyakova/time-tracking-dashboard#readme"
+}
