@@ -106,6 +106,21 @@ h1 > span {
 .report-card--light-orange {
   background-color: var(--light-orange);
 }
+.report-card--soft-blue {
+  background-color: var(--soft-blue);
+}
+.report-card--light-red {
+  background-color: var(--light-red);
+}
+.report-card--line-green {
+  background-color: var(--line-green);
+}
+.report-card--violet {
+  background-color: var(--violet);
+}
+.report-card--soft-orange {
+  background-color: var(--soft-orange);
+}
 .report-card__icon {
   height: 8rem;
   position: absolute;
