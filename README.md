@@ -23,10 +23,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### Links
-
-- [Live Site URL]()
-
 ## Screenshots
 
 ### Desktop

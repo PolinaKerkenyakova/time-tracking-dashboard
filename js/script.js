@@ -3,7 +3,7 @@ let data = [];
 
 const fetchData = async (time = 'daily') => {
 
-    const response = await fetch('../data.json');
+    const response = await fetch('https://time-tracking-dashboard-a98c9-default-rtdb.europe-west1.firebasedatabase.app/.json');
     const result = await response.json();
 
     return result.map(({ title, timeframes }) => {
