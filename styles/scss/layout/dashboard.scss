@@ -2,11 +2,23 @@
     width: 40rem;
     max-width: 90%;
     display: grid;
-    gap: 2.5rem;
+    gap: 2rem;
     margin: 8rem 0;
+
+    @media only screen and (min-width: 1000px) {
+        width: 100rem;
+        max-width: 90%;
+        grid-template-columns: 1fr 3fr
+    }
 }
 
 .stats {
     display: grid;
-    row-gap: 2.5rem;
+    row-gap: 2rem;
+
+    
+    @media only screen and (min-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
 }

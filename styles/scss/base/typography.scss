@@ -1,11 +1,17 @@
 h1 {
-    font-weight: var(--fw-300);
-    font-size: var(--fs-med);
+  font-weight: var(--fw-300);
+  font-size: var(--fs-med);
+
+  @media only screen and (min-width: 1000px) {
+    padding: 2.5rem 0 4rem 0;
+    line-height: 1.3;
+    font-size: var(--fs-huge);
+  }
 }
 
 h1 > span {
-    display: block;
-    font-size: var(--fs-small);
-    font-weight: var(--fw-400);
-    color: var(--pale-blue);
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  color: var(--pale-blue);
 }

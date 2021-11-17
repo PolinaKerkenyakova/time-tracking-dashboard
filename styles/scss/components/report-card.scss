@@ -44,6 +44,7 @@
     position: relative;
     z-index: 2;
     padding: var(--padding-inner);
+    height: 100%;
 
     &:hover {
       background-color: var(--desaturated-blue);
@@ -75,11 +76,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media only screen and (min-width: 1000px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__hours-now {
     font-size: var(--fs-big);
     font-weight: var(--fw-300);
+
+    @media only screen and (min-width: 1000px) {
+      font-size: var(--fs-huge);
+      padding: 1.5rem 0 .5rem 0;
+    }
   }
 
   &__hours-before {

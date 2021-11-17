@@ -16,6 +16,7 @@
   --fs-normal: 1.8rem;
   --fs-med: 2.6rem;
   --fs-big: 3rem;
+  --fs-huge: 4rem;
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
@@ -56,6 +57,13 @@ h1 {
   font-weight: var(--fw-300);
   font-size: var(--fs-med);
 }
+@media only screen and (min-width: 1000px) {
+  h1 {
+    padding: 2.5rem 0 4rem 0;
+    line-height: 1.3;
+    font-size: var(--fs-huge);
+  }
+}
 
 h1 > span {
   display: block;
@@ -82,8 +90,18 @@ h1 > span {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 1000px) {
+  .stats__list {
+    flex-direction: column;
+  }
+}
 .stats__item {
   list-style: none;
+}
+@media only screen and (min-width: 1000px) {
+  .stats__item {
+    margin: 0.8rem 0;
+  }
 }
 .stats__link {
   color: var(--desaturated-blue);
@@ -140,6 +158,7 @@ h1 > span {
   position: relative;
   z-index: 2;
   padding: var(--padding-inner);
+  height: 100%;
 }
 .report-card__stat:hover {
   background-color: var(--desaturated-blue);
@@ -166,9 +185,21 @@ h1 > span {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (min-width: 1000px) {
+  .report-card__hours {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .report-card__hours-now {
   font-size: var(--fs-big);
   font-weight: var(--fw-300);
+}
+@media only screen and (min-width: 1000px) {
+  .report-card__hours-now {
+    font-size: var(--fs-huge);
+    padding: 1.5rem 0 0.5rem 0;
+  }
 }
 .report-card__hours-before {
   color: var(--pale-blue);
@@ -185,6 +216,12 @@ h1 > span {
   padding: var(--padding-inner);
   border-radius: var(--border-radius-default);
 }
+@media only screen and (min-width: 1000px) {
+  .user-profile__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .user-profile__photo-container {
   height: 7rem;
   margin-right: 1.5rem;
@@ -199,13 +236,26 @@ h1 > span {
   width: 40rem;
   max-width: 90%;
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
   margin: 8rem 0;
+}
+@media only screen and (min-width: 1000px) {
+  .dashboard {
+    width: 100rem;
+    max-width: 90%;
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 .stats {
   display: grid;
-  row-gap: 2.5rem;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
